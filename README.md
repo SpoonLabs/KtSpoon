@@ -1,7 +1,10 @@
 # KtSpoon
 Experimental Kotlin support for Spoon. 
 
-KtSpoon is a prototype created as part of a master thesis aimed at investigating to what extent [Spoon](https://github.com/INRIA/spoon)'s metamodel of Java can be used to model Kotlin code. The metamodel used by the prototype is almost the original Spoon metamodel for Java, with additional Kotlin-specific metadata in some of the nodes. The biggest deviation from the basic Java metamodel is the addition of a KtStatementExpression node, used to overcome the fact that statements and expressions are treated differently in Java and Kotlin. 
+KtSpoon is a prototype investigates to what extent [Spoon](https://github.com/INRIA/spoon)'s metamodel of Java can be used to model Kotlin code. The metamodel used by the prototype is almost the original Spoon metamodel for Java, with additional Kotlin-specific metadata in some of the nodes. The biggest deviation from the basic Java metamodel is the addition of a KtStatementExpression node, used to overcome the fact that statements and expressions are treated differently in Java and Kotlin. 
+
+See [KtSpoon : Modelling Kotlin by extending Spoon’s Java Metamodel (Jesper Lundholm, 2021)](http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-304429)
+
 
 The IR module of the official Kotlin compiler is used to parse the code and gain access to an IR graph, which is then transformed into the metamodel.
 
